@@ -1,0 +1,15 @@
+Sync:
+
+    git clone http://path/to/your/vim.git C:\path\to\your\vimfiles
+    cp c:\path\to\your\vimfiles\_vimrc  c:\path\to\your\vim\_vimrc
+    cd c:\path\to\your\vimfiles
+    git submodule init
+    git submodule update
+
+Update Plugin:
+   git submodule foreach git pull origin master
+
+Add Plugin:
+   git submodule add http://github.com/path/to/pluginxx.git bundle/pluginxx
+   git add .
+   git git commit -m "install pluginxx"
