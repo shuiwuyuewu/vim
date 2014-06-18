@@ -1,0 +1,3 @@
+[submodule "bundle/vim-kolor"]
+	path = bundle/vim-kolor
+	url = http://github.com/zeis/vim-kolor.git
