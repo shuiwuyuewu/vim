@@ -50,3 +50,8 @@ set undolevels=1000
 set nobackup
 set go-=T
 set go-=m
+colorscheme kolor
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set cindent
