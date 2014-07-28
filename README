@@ -12,4 +12,36 @@ Update Plugin:
 Add Plugin:
    git submodule add http://github.com/path/to/pluginxx.git bundle/pluginxx
    git add .
-   git git commit -m "install pluginxx"
+   git commit -m "install pluginxx"
+
+In Linux:
+
+   1. Create a vim repository
+       mv .vimrc ~/.vim/vimrc
+	   mv .gvimrc ~/.vim/gvimrc
+	   ln -s ~/.vim/vimrc ~/.vimrc
+	   ln -s ~/.vim/gvimrc ~/.gvimrc
+	   cd ~/.vim
+	   git init
+	   git add .
+	   git commit -m "Initial commit"
+   2. Download pathogen.vim from github
+   3. Install plugins as submodules
+       cd ~/.vim
+	   mkdir ~/.vim/bundle
+	   git submodule add http://github.com/xxx/xxxx.git bundle/xxxx
+	   git add .
+	   git commit -m "Install xxxx.vim bundle as a submodule."
+   4. Install your vim environment on another machine
+       cd ~
+	   git clone https://github.com/shuiwuyuewu/vim.git ~/.vim
+	   ln -s ~/.vim/vimrc ~/.vimrc
+	   ln -s ~/.vim/gvimrc ~/.gvimrc
+	   cd ~/.vim
+	   git submodule init
+	   git submodule update
+   5. Upgrade a plugin bundle
+       cd ~/.vim/bundle/xxxx
+	   git pull origin master
+   6. Upgrade all bundled plugins
+       git submodule foreach git pull origin master

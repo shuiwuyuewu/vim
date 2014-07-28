@@ -41,7 +41,6 @@ set smartcase
 set showmatch
 set autoindent
 set ruler
-set viminfo+=n$VIM/_viminfo
 set noerrorbells
 set showcmd
 set mouse=a
